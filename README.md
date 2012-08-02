@@ -17,13 +17,15 @@ Main ideas behind this framework:
 * Form builder with ability to automatic assign values to inputs and get nested associated models and build fields from them (formFor and fieldsFor)
 
 
-Sits on top of:
+Made of
+=======
 
 * backbone
 * jquery.form
 * ...
 
-Ideas from:
+Influence by
+============
 
 * Joosy
 * Batman.js
