@@ -15,8 +15,8 @@ Main ideas behind this framework:
     * Client-side
     * Server-side
 * Nested attributes using both possibilities:
-    ** Embedded has many and has one
-    ** Associated outside models
+    * Embedded has many and has one
+    * Associated outside models
 * Form builder with ability to automatic assign values to inputs and get nested associated models and build fields from them (formFor and fieldsFor)
 
 
