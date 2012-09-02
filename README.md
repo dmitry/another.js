@@ -24,6 +24,7 @@ Made of
 =======
 
 * backbone (https://github.com/documentcloud/backbone)
+* underscore
 * jquery.form or jQuery-File-Upload (https://github.com/malsup/form/, https://github.com/blueimp/jQuery-File-Upload)
 * HAML (https://github.com/netzpirat/haml_coffee_assets)
 * Coffeescript
@@ -36,3 +37,44 @@ Influence by
 * Joosy
 * Batman.js
 * Backbone.js
+
+
+API (WIP)
+=========
+
+AbstractView
+* load - can have multiple functions that can be loaded asynchonically
+* before - function that invokes before render and after load
+* after - after `remove` invoked (called from `remove`)
+
+* remove - removes bindings and current $el
+
+Router - support nested queries inside hash, hash and history API
+* [TODO]
+
+Layout
+* page
+* widgets
+
+Page
+* @layout - sets layout
+* layout - sets layout, alternative to @layout
+
+* layout - layout, default value is 'default'
+* previous - {page, position}: previous page object, position is x/y of previous screen that loaded when user clicks back
+* params
+
+* @scroll - function, that scrolls screen to position
+  
+Widget
+* parent - sets when layout, page or widget creates nested widget
+
+Form
+* constructor - set ajaxForm, adds method depends on resource persistence
+* submit - submits form
+
+Templater
+* @get(name, locals) - get template by name from JST and pass it to constructor
+* constructor(template, locals)
+* render(locals) - render template
+* @insert - insert to DOM (uniqueId from underscore to generate ID for data-another-insert)
