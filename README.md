@@ -61,7 +61,7 @@ Page
 * layout - sets layout, alternative to @layout
 
 * layout - layout, default value is 'default'
-* previous - {page, position}: previous page object, position is x/y of previous screen that loaded when user clicks back
+* previous - `{page, position}`: previous page object, position is x/y of previous screen that loaded when user clicks back
 * params
 
 * @scroll - function, that scrolls screen to position
