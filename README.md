@@ -78,3 +78,14 @@ Templater
 * constructor(template, locals)
 * render(locals) - render template
 * @insert - insert to DOM (uniqueId from underscore to generate ID for data-another-insert)
+
+Collection extended from Backbone.Collection
+
+Resource extended from Backbone.Model
+* @hasMany - embedded collection
+* @hasManyExternal - outside associated proxy collection
+* @hasOne
+* @hasOneExternal
+* @belongsTo
+* @hasManyIds - embedded ids, but external resources associated through proxy collection
+* @hasAndBelongsToMany
