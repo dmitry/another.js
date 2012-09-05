@@ -49,18 +49,18 @@ AbstractView
 
 * remove - removes bindings and current $el
 
-## Router
+### Router
 
 Support nested queries inside hash, hash and history API
 
 * [TODO]
 
-## Layout
+### Layout
 
 * page
 * widgets
 
-## Page
+### Page
 
 * @layout - sets layout
 * layout - sets layout, alternative to @layout
@@ -71,25 +71,25 @@ Support nested queries inside hash, hash and history API
 
 * @scroll - function, that scrolls screen to position
   
-## Widget
+### Widget
 
 * parent - sets when layout, page or widget creates nested widget
 
-## Form
+### Form
 
 * `constructor` - set ajaxForm, adds method depends on resource persistence
 * `submit` - submits form
 
-## Templater
+### Templater
 
 * `@get(name, locals)` - get template by name from JST and pass it to constructor
 * `constructor(template, locals)`
 * `render(locals)` - render template
 * `@insert` - insert to DOM (uniqueId from underscore to generate ID for data-another-insert)
 
-## Collection extended from Backbone.Collection
+### Collection extended from Backbone.Collection
 
-## Resource extended from Backbone.Model
+### Resource extended from Backbone.Model
 
 * `@hasMany` - embedded collection
 * `@hasManyExternal` - outside associated proxy collection
