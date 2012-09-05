@@ -49,14 +49,19 @@ AbstractView
 
 * remove - removes bindings and current $el
 
-Router - support nested queries inside hash, hash and history API
+## Router
+
+Support nested queries inside hash, hash and history API
+
 * [TODO]
 
-Layout
+## Layout
+
 * page
 * widgets
 
-Page
+## Page
+
 * @layout - sets layout
 * layout - sets layout, alternative to @layout
 
@@ -66,26 +71,30 @@ Page
 
 * @scroll - function, that scrolls screen to position
   
-Widget
+## Widget
+
 * parent - sets when layout, page or widget creates nested widget
 
-Form
-* constructor - set ajaxForm, adds method depends on resource persistence
-* submit - submits form
+## Form
 
-Templater
-* @get(name, locals) - get template by name from JST and pass it to constructor
-* constructor(template, locals)
-* render(locals) - render template
-* @insert - insert to DOM (uniqueId from underscore to generate ID for data-another-insert)
+* `constructor` - set ajaxForm, adds method depends on resource persistence
+* `submit` - submits form
 
-Collection extended from Backbone.Collection
+## Templater
 
-Resource extended from Backbone.Model
-* @hasMany - embedded collection
-* @hasManyExternal - outside associated proxy collection
-* @hasOne
-* @hasOneExternal
-* @belongsTo
-* @hasManyIds - embedded ids, but external resources associated through proxy collection
-* @hasAndBelongsToMany
+* `@get(name, locals)` - get template by name from JST and pass it to constructor
+* `constructor(template, locals)`
+* `render(locals)` - render template
+* `@insert` - insert to DOM (uniqueId from underscore to generate ID for data-another-insert)
+
+## Collection extended from Backbone.Collection
+
+## Resource extended from Backbone.Model
+
+* `@hasMany` - embedded collection
+* `@hasManyExternal` - outside associated proxy collection
+* `@hasOne`
+* `@hasOneExternal`
+* `@belongsTo`
+* `@hasManyIds` - embedded ids, but external resources associated through proxy collection
+* `@hasAndBelongsToMany`
