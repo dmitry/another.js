@@ -98,3 +98,22 @@ Support nested queries inside hash, hash and history API
 * `@belongsTo`
 * `@hasManyIds` - embedded ids, but external resources associated through proxy collection
 * `@hasAndBelongsToMany`
+
+
+## Unsorted Ideas
+
+* user spec for testing (jasmine), may be add integration testing using phantom.js
+* add generators for model, collection,  page, layout, widget, route, scaffold
+
+
+Basic idea is:
+
+`Router` is getting `page`, `page` can constist of `layout` and `widgets` (`page`, `layout` and `widget` is inherited from a `view`). Any `view` can have a `form`. `Collection` can have one or multiple `resource`s (`model`s).
+
+Model can have different association types: embedded and external (embedded have embed object and external have id reference(s) to a models).
+
+Form features:
+* nested association
+* error output from: client and server (nested attribute dependent server error output).
+* bind and fill form and form partials (only with this functionality it's possible to post files). - what does mean... I think it should not be implemented, but anyway as an idea it can have it's own life.
+* 
